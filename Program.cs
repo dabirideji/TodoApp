@@ -13,6 +13,23 @@ builder.Services.AddDbContext<TodoDbContext>(
    } 
 );
 
+//I DID THIS FOR YOU COS I KNOW U WILL BE USING SQLSERVER
+//UNCOMMENT THE CODE BELOW. ALSO MAKE SURE YOUR CONNECTION STRING 
+// IN YOUR APP  SETTINGS .JSON IS CORRECT
+///////////////////////////////////////////////////////
+
+// builder.Services.AddDbContext<TodoDbContext>(
+//    options=>{
+//     options.UseSqlServer(
+//         builder.Configuration.GetConnectionString("DefaultConnection")
+//     );
+//    } 
+// );
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
